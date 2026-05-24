@@ -1020,6 +1020,8 @@ ul {
   padding: 4px;
   border: 1px solid var(--border);
   box-shadow: var(--shadow-sm);
+  object-fit: contain;
+  display: block;
 }
 
 :root[data-theme='dark'] .cert-logo {
