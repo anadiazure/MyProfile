@@ -485,3 +485,103 @@
     margin-bottom: 0.18rem;
   }
 }
+
+
+/* =========================================================
+   Resume credentials list (Certifications + Education)
+   ========================================================= */
+.resume-cred-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cred-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 0.75rem 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+.cred-item:last-child {
+  border-bottom: none;
+}
+
+.cred-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.cred-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.15rem;
+}
+
+.cred-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--fg);
+  line-height: 1.3;
+}
+
+.cred-meta-text {
+  font-size: 0.85rem;
+  color: var(--fg-subtle);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cred-detail {
+  margin: 0.15rem 0 0;
+  font-size: 0.92rem;
+  color: var(--fg-muted);
+}
+
+.cred-detail.org {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Print: keep logos visible but smaller */
+@media print {
+  .cert-logo {
+    width: 34px;
+    height: 34px;
+    background: #ffffff !important;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .cred-item {
+    page-break-inside: avoid;
+    padding: 0.4rem 0;
+  }
+
+  .cred-title {
+    font-size: 11pt;
+  }
+
+  .cred-detail {
+    font-size: 10pt;
+    color: #000;
+  }
+
+  .cred-detail.org {
+    color: #333;
+  }
+
+  .cred-meta-text {
+    font-size: 9.5pt;
+    color: #555;
+  }
+}

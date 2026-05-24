@@ -975,16 +975,25 @@ ul {
 }
 
 .cert-list li {
-  padding: 0.7rem 0;
+  padding: 0.8rem 0;
   border-bottom: 1px dashed var(--border);
   display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.85rem;
   font-size: 0.92rem;
 }
 
 .cert-list li:last-child {
   border-bottom: none;
+}
+
+.cert-list .cert-item-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
 }
 
 .cert-list strong {
@@ -995,4 +1004,31 @@ ul {
 
 .cert-list span {
   color: var(--fg-muted);
+}
+
+
+/* =========================================================
+   Brand logo badge (used in cert/edu lists across pages)
+   ========================================================= */
+.cert-logo {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 4px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+:root[data-theme='dark'] .cert-logo {
+  background: #ffffff;
+  border-color: var(--border-strong);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .cert-logo {
+    background: #ffffff;
+    border-color: var(--border-strong);
+  }
 }
