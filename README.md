@@ -85,6 +85,6 @@ The print stylesheet automatically:
 
 - Email: [mayankanadi@gmail.com](mailto:mayankanadi@gmail.com)
 - Phone: +91 8099066820
-- LinkedIn: [linkedin.com/in/anadi-kasaundhan](https://www.linkedin.com/in/anadi-kasaundhan)
+- LinkedIn: [linkedin.com/in/anadi-kasaundhan-22979716](https://www.linkedin.com/in/anadi-kasaundhan-22979716/)
 - GitHub: [github.com/anadiazure](https://github.com/anadiazure)
 - Location: Hyderabad, India

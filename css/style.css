@@ -527,10 +527,10 @@ ul {
   background: var(--bg-elev);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  padding: 1rem 1.25rem 1.25rem;
+  padding: 1.25rem 1.4rem 1.4rem;
   box-shadow: var(--shadow-lg);
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
   width: min(90%, 360px);
   top: 50%;
   transform: translateY(-50%);
@@ -1031,4 +1031,70 @@ ul {
     background: #ffffff;
     border-color: var(--border-strong);
   }
+}
+
+
+
+/* =========================================================
+   Hero card content (replaces former code snippet)
+   ========================================================= */
+.hero-card-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin: 0 0 0.65rem;
+}
+
+.hero-card-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--fg);
+  margin: 0 0 0.2rem;
+  letter-spacing: -0.01em;
+}
+
+.hero-card-role {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--fg-muted);
+  margin: 0 0 0.2rem;
+}
+
+.hero-card-loc {
+  font-size: 0.8rem;
+  color: var(--fg-subtle);
+  margin: 0;
+}
+
+.hero-card-rule {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 0.9rem 0;
+}
+
+.hero-card-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--fg-subtle);
+  margin: 0 0 0.5rem;
+}
+
+.hero-card-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.hero-card-stack li {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  color: var(--fg-muted);
+  font-weight: 500;
 }
