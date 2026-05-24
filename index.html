@@ -391,10 +391,15 @@
             <ul class="cert-list">
               <li>
                 <svg class="cert-logo" viewBox="0 0 48 48" aria-hidden="true">
-                  <path fill="#4285F4" d="M44.5 20H24v8.5h11.8C34.7 33.9 30 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2C11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"/>
-                  <path fill="#EA4335" d="M6.3 14.7l7.2 5.3C15.5 15 19.4 11 24 11c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 16.3 2 9.7 6.3 6.3 14.7z"/>
-                  <path fill="#34A853" d="M24 46c5.5 0 10.5-1.9 14.4-5.2l-6.6-5.6C29.5 37.1 26.9 38 24 38c-6 0-10.7-3.1-12.5-7.5l-7.2 5.5C7.7 41.7 15.2 46 24 46z"/>
-                  <path fill="#FBBC05" d="M44.5 20H24v8.5h11.8c-1 2.6-2.7 4.7-4.7 6.2l6.6 5.6C42.5 36.5 46 30.7 46 24c0-1.3-.2-2.7-.5-4z"/>
+                  <defs>
+                    <clipPath id="gccloud-idx"><path d="M36 22C40 22 42 25 42 28C42 31 40 34 36 34H12C8 34 6 31 6 28C6 25 8 22 12 22C12 16 16 12 22 12C26 12 30 14 32 18C34 17 35 18 36 22Z"/></clipPath>
+                  </defs>
+                  <g clip-path="url(#gccloud-idx)">
+                    <rect width="24" height="24" fill="#4285F4"/>
+                    <rect x="24" width="24" height="24" fill="#EA4335"/>
+                    <rect y="24" width="24" height="24" fill="#34A853"/>
+                    <rect x="24" y="24" width="24" height="24" fill="#FBBC05"/>
+                  </g>
                 </svg>
                 <div class="cert-item-text">
                   <strong>GCP</strong>
@@ -403,7 +408,12 @@
               </li>
               <li>
                 <svg class="cert-logo" viewBox="0 0 48 48" aria-hidden="true">
-                  <path fill="#0078D4" d="M22.5 6L4 42h11l2.5-6h13l2.5 6h11L26.5 6h-4zm2 11l4 13h-8l4-13z"/>
+                  <defs>
+                    <linearGradient id="azG1-idx" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#50C8F4"/><stop offset="1" stop-color="#0078D4"/></linearGradient>
+                    <linearGradient id="azG2-idx" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0078D4"/><stop offset="1" stop-color="#003D80"/></linearGradient>
+                  </defs>
+                  <path fill="url(#azG1-idx)" d="M21 6L5 41H18L30 22Z"/>
+                  <path fill="url(#azG2-idx)" d="M22 12L43 41H18L24 38L34 26L29 18Z"/>
                 </svg>
                 <div class="cert-item-text">
                   <strong>Azure</strong>
@@ -412,8 +422,11 @@
               </li>
               <li>
                 <svg class="cert-logo" viewBox="0 0 48 48" aria-hidden="true">
-                  <circle cx="24" cy="24" r="22" fill="#C8102E"/>
-                  <text x="24" y="29" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14" font-weight="800">PMP</text>
+                  <rect x="2" y="2" width="44" height="44" rx="6" fill="#582C83"/>
+                  <text x="24" y="29" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="13" font-weight="900">PMP</text>
+                  <rect x="34" y="36" width="9" height="1" fill="#EF3340"/>
+                  <rect x="34" y="38" width="9" height="1" fill="#FFFFFF"/>
+                  <rect x="34" y="40" width="9" height="1" fill="#0078D4"/>
                 </svg>
                 <div class="cert-item-text">
                   <strong>PMI</strong>
@@ -428,10 +441,13 @@
             <ul class="cert-list">
               <li>
                 <svg class="cert-logo" viewBox="0 0 48 48" aria-hidden="true">
-                  <circle cx="24" cy="24" r="22" fill="#0D1B5C"/>
-                  <circle cx="24" cy="24" r="19" fill="none" stroke="#D4A017" stroke-width="1"/>
-                  <text x="24" y="22" text-anchor="middle" fill="#D4A017" font-family="Georgia, serif" font-size="10" font-weight="700">IIM</text>
-                  <text x="24" y="34" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, serif" font-size="5.5" font-weight="600" letter-spacing="0.8">BANGALORE</text>
+                  <rect x="2" y="2" width="44" height="44" rx="4" fill="#A41E22"/>
+                  <g stroke="#FFC72C" stroke-width="0.5" fill="none" opacity="0.85">
+                    <path d="M14 10L16 5M19 9L20 4M24 8L24 3.5M29 9L28 4M34 10L32 5"/>
+                  </g>
+                  <text x="24" y="26" text-anchor="middle" fill="#FFC72C" font-family="Georgia, serif" font-size="11" font-weight="800">IIMB</text>
+                  <line x1="12" y1="30" x2="36" y2="30" stroke="#FFC72C" stroke-width="0.6" opacity="0.7"/>
+                  <text x="24" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, serif" font-size="4.5" font-weight="600" letter-spacing="0.5">BANGALORE</text>
                 </svg>
                 <div class="cert-item-text">
                   <strong>IIM Bangalore &middot; 2025</strong>
@@ -440,10 +456,15 @@
               </li>
               <li>
                 <svg class="cert-logo" viewBox="0 0 48 48" aria-hidden="true">
-                  <circle cx="24" cy="24" r="22" fill="#003D5C"/>
-                  <circle cx="24" cy="24" r="19" fill="none" stroke="#FFFFFF" stroke-width="0.6"/>
-                  <text x="24" y="22" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, serif" font-size="10" font-weight="700">IIT</text>
-                  <text x="24" y="34" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, serif" font-size="6" font-weight="600" letter-spacing="0.8">MADRAS</text>
+                  <circle cx="24" cy="24" r="22" fill="#0E2E4F"/>
+                  <circle cx="24" cy="24" r="19.5" fill="none" stroke="#D4A017" stroke-width="0.6"/>
+                  <g fill="#D4A017">
+                    <path d="M24 11Q22 13 23 16.5Q24 14.5 25 16.5Q26 13 24 11Z"/>
+                    <path d="M19 19Q24 23.5 29 19L26.5 22.5Q24 24.5 21.5 22.5Z"/>
+                    <ellipse cx="24" cy="24.5" rx="4.5" ry="0.8"/>
+                  </g>
+                  <text x="24" y="34" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, serif" font-size="6" font-weight="700">IIT</text>
+                  <text x="24" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, serif" font-size="4" font-weight="600" letter-spacing="0.5">MADRAS</text>
                 </svg>
                 <div class="cert-item-text">
                   <strong>IIT Madras &middot; 2019</strong>
@@ -452,9 +473,15 @@
               </li>
               <li>
                 <svg class="cert-logo" viewBox="0 0 48 48" aria-hidden="true">
-                  <circle cx="24" cy="24" r="22" fill="#7B1F2A"/>
-                  <text x="24" y="22" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, serif" font-size="9" font-weight="700">UPTU</text>
-                  <text x="24" y="33" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, serif" font-size="5.5" font-weight="600">LUCKNOW</text>
+                  <circle cx="24" cy="24" r="22" fill="#F4B400"/>
+                  <circle cx="24" cy="24" r="19" fill="none" stroke="#7B1F2A" stroke-width="0.6"/>
+                  <g fill="#7B1F2A">
+                    <circle cx="24" cy="20" r="3"/>
+                    <circle cx="24" cy="20" r="1.5" fill="#F4B400"/>
+                    <path d="M16 20Q24 26 32 20Q24 22 16 20Z"/>
+                  </g>
+                  <text x="24" y="32" text-anchor="middle" fill="#7B1F2A" font-family="Georgia, serif" font-size="6.5" font-weight="800">UPTU</text>
+                  <text x="24" y="39" text-anchor="middle" fill="#7B1F2A" font-family="Georgia, serif" font-size="3.8" font-weight="700" letter-spacing="0.5">LUCKNOW</text>
                 </svg>
                 <div class="cert-item-text">
                   <strong>UPTU, Lucknow &middot; 2003&ndash;2007</strong>
