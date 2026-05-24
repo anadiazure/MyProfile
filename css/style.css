@@ -868,3 +868,131 @@ ul {
     align-self: flex-start;
   }
 }
+
+
+
+/* =========================================================
+   Highlights / metrics grid
+   ========================================================= */
+.highlights {
+  padding-top: 0;
+  padding-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  text-align: center;
+}
+
+.metrics-grid li {
+  padding: 1.4rem 1rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: transform var(--transition), border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.metrics-grid li:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.metrics-grid strong {
+  display: block;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.metrics-grid span {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--fg-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+/* =========================================================
+   Project card extras
+   ========================================================= */
+.project-org {
+  color: var(--fg-subtle);
+  font-weight: 500;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.projects-cta {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  color: var(--fg-muted);
+}
+
+.projects-cta a {
+  font-weight: 600;
+}
+
+/* =========================================================
+   Recognition section (certs / education / awards)
+   ========================================================= */
+.recognition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.recognition-card {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: transform var(--transition), box-shadow var(--transition),
+    border-color var(--transition);
+}
+
+.recognition-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.recognition-card h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.cert-list li {
+  padding: 0.7rem 0;
+  border-bottom: 1px dashed var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: 0.92rem;
+}
+
+.cert-list li:last-child {
+  border-bottom: none;
+}
+
+.cert-list strong {
+  color: var(--fg);
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.cert-list span {
+  color: var(--fg-muted);
+}

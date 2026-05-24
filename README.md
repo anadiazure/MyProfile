@@ -1,22 +1,46 @@
-# MyProfile
+# Anadi Mayank Kasaundhan — Portfolio
 
-A personal portfolio and resume website built with plain **HTML, CSS, and JavaScript** — no build step, no framework, no dependencies. Deploys anywhere static files run (GitHub Pages, Netlify, Vercel, S3, etc.).
+Personal portfolio and resume site for **Anadi Mayank Kasaundhan** — Lead Specialty Software Engineer, Modernization Lead, and Cloud & AI Architect (GCP, Kubernetes/OpenShift, GPU Platforms, MLOps).
+
+Built with plain **HTML, CSS, and JavaScript** — no build step, no framework, no dependencies. Deploys anywhere static files run (GitHub Pages, Netlify, Vercel, S3, etc.).
+
+## Live sections
+
+**Portfolio (`index.html`)**
+- Hero with title and contact
+- Career highlights (key metrics: 18+ years, 20+ engineers led, ~55% GPU gain, 35% reliability uplift, etc.)
+- About — professional summary and current role
+- Core competencies — 8 categories spanning Cloud, Kubernetes, GPU/HPC, MLOps, Big Data, IaC, Security, Programming
+- Selected projects — GCP Cloud Adoption, Enterprise GenAI Platform, Big Data Platform, GPU Hard Kill Switch patent
+- Recognition — certifications (GCP, Azure, PMP, Terraform), education (IIM Bangalore, IIT Madras, UPTU), awards
+- Contact
+
+**Resume (`resume.html`)**
+- Header with contact details
+- Professional summary
+- Work experience — 4 Wells Fargo roles (2013–Present) plus Oracle, Thomson Reuters, Birlasoft
+- Select projects with measurable outcomes
+- Core competencies (8 categories)
+- Certifications
+- Education
+- Patent — GPU Hard Kill Switch
+- Accolades — 6 awards across 11 years
+- Print/save-PDF support with optimized print stylesheet
 
 ## Features
 
-- **Two pages** — a portfolio (`index.html`) and a printable resume (`resume.html`)
 - **Light & dark theme** with system-preference detection and a manual toggle (saved to `localStorage`)
 - **Responsive** layout, mobile-first, with a collapsible mobile nav
 - **Accessible** — semantic HTML, ARIA labels, visible focus states, skip link, reduced-motion support
-- **Print-ready resume** — clean A4/Letter print styles, hide chrome, "Print / Save as PDF" button
+- **Print-ready resume** — clean Letter print styles, hide chrome, "Print / Save as PDF" button
 - **Zero dependencies** — only Google Fonts (Inter) loaded from CDN; everything else is local
-- **Fast** — under ~25 KB of CSS/JS, no bundler required
+- **Fast** — under ~30 KB of CSS/JS, no bundler required
 
 ## Project structure
 
 ```
 MyProfile/
-├── index.html         # Portfolio (hero, about, skills, projects, contact)
+├── index.html         # Portfolio page
 ├── resume.html        # CV / resume page with print support
 ├── css/
 │   ├── style.css      # Shared styles, theme tokens, layout, components
@@ -28,7 +52,7 @@ MyProfile/
 
 ## Run locally
 
-No build step required. Just open `index.html` in a browser, or serve the folder with any static server, for example:
+No build step required. Open `index.html` directly, or serve the folder with any static server:
 
 ```bash
 # Python
@@ -40,32 +64,27 @@ npx serve .
 
 Then visit http://localhost:8080.
 
-## Customize
-
-All content uses generic placeholders so you can find-and-replace your way to a finished site.
-
-1. **Personal details** — search for `Your Name`, `Your City`, `you@example.com`, and the social URLs (`github.com/anadiazure`, `linkedin.com/`) in `index.html` and `resume.html` and replace with your own.
-2. **Initials in the brand mark** — search for `YN` in both HTML files.
-3. **Bio, projects, experience** — edit the text directly in the relevant section of `index.html` and `resume.html`.
-4. **Theme color** — change `--accent` (and the dark-mode override) in `css/style.css` under the `:root` block.
-5. **Skills / tags** — edit the `<ul class="tag-list">` lists.
-
 ## Deploy to GitHub Pages
 
-1. Push to GitHub.
+1. Push to GitHub (already done — repo: `anadiazure/MyProfile`).
 2. Go to **Settings → Pages**.
-3. Under **Source**, choose the branch (e.g. `main`) and the root folder (`/`).
-4. Save. Your site will be available at `https://<your-username>.github.io/MyProfile/`.
+3. Under **Source**, choose the `main` branch and the root folder (`/`).
+4. Save. The site will be available at `https://anadiazure.github.io/MyProfile/`.
 
 ## Print the resume as PDF
 
-Open `resume.html` and click **Print / Save PDF** in the top-right (or use your browser's print dialog). The print stylesheet automatically:
+Open `resume.html` and click **Print / Save PDF** in the top-right (or use your browser's print dialog).
 
+The print stylesheet automatically:
 - Hides navigation, footer, and the print button
 - Forces a light, high-contrast palette
 - Sets Letter-size page margins
 - Avoids breaking entries across pages
 
-## License
+## Contact
 
-Free to use as a starting point for your own profile. Attribution is appreciated but not required.
+- Email: [mayankanadi@gmail.com](mailto:mayankanadi@gmail.com)
+- Phone: +91 8099066820
+- LinkedIn: [linkedin.com/in/anadi-kasaundhan](https://www.linkedin.com/in/anadi-kasaundhan)
+- GitHub: [github.com/anadiazure](https://github.com/anadiazure)
+- Location: Hyderabad, India
