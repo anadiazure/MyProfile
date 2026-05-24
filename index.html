@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Your Name — software developer, designer, and lifelong learner." />
+  <meta name="author" content="Your Name" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Your Name — Portfolio" />
+  <meta property="og:description" content="Software developer, designer, and lifelong learner." />
+  <meta property="og:type" content="website" />
+
+  <title>Your Name — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#top" class="brand">
+        <span class="brand-mark">YN</span>
+        <span class="brand-text">Your Name</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="primary-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.html" class="nav-cta">Resume</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle color theme">
+            <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+            </svg>
+            <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Hi there, I'm</p>
+          <h1 class="hero-title">Your Name.</h1>
+          <p class="hero-tagline">I build thoughtful, accessible software for the web.</p>
+          <p class="hero-lede">
+            Based in <strong>Your City</strong>, I work as a <strong>Software Developer</strong> focused on
+            crafting clean interfaces, reliable systems, and delightful user experiences.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">See my work</a>
+            <a href="resume.html" class="btn btn-ghost">View resume</a>
+          </div>
+          <ul class="social-list" aria-label="Social profiles">
+            <li><a href="https://github.com/anadiazure" aria-label="GitHub">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/" aria-label="LinkedIn">LinkedIn</a></li>
+            <li><a href="mailto:you@example.com" aria-label="Email">Email</a></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+          <div class="hero-card">
+            <div class="dot dot-r"></div>
+            <div class="dot dot-y"></div>
+            <div class="dot dot-g"></div>
+            <pre class="code"><span class="t-key">const</span> <span class="t-var">me</span> = {
+  <span class="t-prop">name</span>: <span class="t-str">'Your Name'</span>,
+  <span class="t-prop">role</span>: <span class="t-str">'Developer'</span>,
+  <span class="t-prop">stack</span>: [<span class="t-str">'JS'</span>, <span class="t-str">'TS'</span>, <span class="t-str">'React'</span>],
+  <span class="t-prop">curious</span>: <span class="t-bool">true</span>,
+};</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">01</span>
+          <h2>About me</h2>
+        </header>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a developer who enjoys turning ideas into products. I care about
+              <strong>clarity</strong>, <strong>accessibility</strong>, and writing code
+              that's easy to read months later.
+            </p>
+            <p>
+              Outside of work, you'll find me reading, hiking, and building little side
+              projects that scratch a curiosity itch. I'm always open to interesting
+              conversations and collaborations.
+            </p>
+            <p>
+              A few quick facts about me:
+            </p>
+            <ul class="check-list">
+              <li>4+ years building web applications</li>
+              <li>Comfortable across the stack — frontend to API to deploy</li>
+              <li>Strong opinions, loosely held</li>
+              <li>Coffee enthusiast</li>
+            </ul>
+          </div>
+          <aside class="about-card">
+            <h3>Currently</h3>
+            <ul class="meta-list">
+              <li><span>Role</span><strong>Software Developer</strong></li>
+              <li><span>Location</span><strong>Your City</strong></li>
+              <li><span>Focus</span><strong>Web platform, DX</strong></li>
+              <li><span>Status</span><strong>Open to opportunities</strong></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">02</span>
+          <h2>Skills &amp; tools</h2>
+        </header>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Languages</h3>
+            <ul class="tag-list">
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Python</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SQL</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Frontend</h3>
+            <ul class="tag-list">
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Vue</li>
+              <li>Tailwind</li>
+              <li>Vite</li>
+              <li>Web Components</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Backend</h3>
+            <ul class="tag-list">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>FastAPI</li>
+              <li>PostgreSQL</li>
+              <li>Redis</li>
+              <li>REST &amp; GraphQL</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Tools &amp; cloud</h3>
+            <ul class="tag-list">
+              <li>Git</li>
+              <li>Docker</li>
+              <li>AWS</li>
+              <li>GitHub Actions</li>
+              <li>Vercel</li>
+              <li>Figma</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">03</span>
+          <h2>Selected projects</h2>
+        </header>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="badge">Web app</span>
+              <span class="year">2025</span>
+            </div>
+            <h3>Project One</h3>
+            <p>
+              A short, punchy description of what this project does, who it's for, and
+              what problem it solves. Mention measurable outcomes when you can.
+            </p>
+            <ul class="tag-list small">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Node</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" aria-label="View Project One source on GitHub">Code &rarr;</a>
+              <a href="#" aria-label="View Project One live demo">Live &rarr;</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="badge">Open source</span>
+              <span class="year">2024</span>
+            </div>
+            <h3>Project Two</h3>
+            <p>
+              An open-source utility used by other developers. Highlight what makes it
+              interesting — performance, ergonomics, design, or community.
+            </p>
+            <ul class="tag-list small">
+              <li>TypeScript</li>
+              <li>Vite</li>
+              <li>Vitest</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" aria-label="View Project Two source on GitHub">Code &rarr;</a>
+              <a href="#" aria-label="Read Project Two documentation">Docs &rarr;</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="badge">API</span>
+              <span class="year">2024</span>
+            </div>
+            <h3>Project Three</h3>
+            <p>
+              A backend service handling X requests per day. Talk about reliability,
+              architecture choices, and any operational learnings.
+            </p>
+            <ul class="tag-list small">
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" aria-label="View Project Three source on GitHub">Code &rarr;</a>
+              <a href="#" aria-label="Read Project Three case study">Case study &rarr;</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="badge">Side project</span>
+              <span class="year">2023</span>
+            </div>
+            <h3>Project Four</h3>
+            <p>
+              A weekend project that turned into something useful. Good place to show
+              personality and curiosity.
+            </p>
+            <ul class="tag-list small">
+              <li>Next.js</li>
+              <li>Tailwind</li>
+              <li>SQLite</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" aria-label="View Project Four source on GitHub">Code &rarr;</a>
+              <a href="#" aria-label="View Project Four live demo">Live &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact">
+        <header class="section-head">
+          <span class="section-num">04</span>
+          <h2>Get in touch</h2>
+        </header>
+        <p class="contact-lede">
+          I'm always happy to chat about projects, opportunities, or just trade
+          recommendations. The fastest way to reach me is email.
+        </p>
+        <a href="mailto:you@example.com" class="btn btn-primary btn-lg">Say hello &rarr;</a>
+        <ul class="social-list center" aria-label="Other ways to connect">
+          <li><a href="https://github.com/anadiazure">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS &amp; a bit of JavaScript.</p>
+      <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
