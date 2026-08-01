@@ -11,7 +11,7 @@ Built with plain **HTML, CSS, and JavaScript** — no build step, no framework, 
 - Career highlights (key metrics: 18+ years, 20+ engineers led, ~55% GPU gain, 35% reliability uplift, etc.)
 - About — professional summary and current role
 - Core competencies — 8 categories spanning Cloud, Kubernetes, GPU/HPC, MLOps, Big Data, IaC, Security, Programming
-- Selected projects — GCP Cloud Adoption, Enterprise GenAI Platform, Big Data Platform, GPU Hard Kill Switch patent
+- Selected projects — GCP Cloud Adoption, Enterprise GenAI Platform, Big Data Platform, 2 filed patents
 - Recognition — certifications (GCP, Azure, PMP, Terraform), education (IIM Bangalore, IIT Madras, UPTU), awards
 - Contact
 
@@ -23,7 +23,7 @@ Built with plain **HTML, CSS, and JavaScript** — no build step, no framework, 
 - Core competencies (8 categories)
 - Certifications
 - Education
-- Patent — GPU Hard Kill Switch
+- Patents — GPU Hard Kill Switch, GPU-Validated AI Model Fragment Registration
 - Accolades — 6 awards across 11 years
 - Print/save-PDF support with optimized print stylesheet
 
